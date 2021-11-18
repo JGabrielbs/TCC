@@ -1,0 +1,60 @@
+  
+  .fa-user{
+    position: center;
+    display: block;
+    text-align: center;
+    
+
+}
+
+      .wrap-input1000{
+      position: relative;
+      top: 110px;
+    
+
+      }
+
+      
+      .wrap-input1000 #btn1000{
+        position: relative;
+        top: 140px;
+      }
+
+      .btn_profile{
+
+        position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        min-width: 160px;
+        height: 50px;
+        
+        border-radius: 25px;
+      
+        font-family: SourceSansPro-SemiBold;
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.2;
+        text-transform: uppercase;
+          
+      
+            }
+            
+            .wrap-input100 #descricao100{
+             height: 150px;
+
+
+            }
+
+            .validate-input #descricao100{
+                position: top;
+              }
+              
+      @media (max-width: 480px) {
+        .wrap-login100 {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+

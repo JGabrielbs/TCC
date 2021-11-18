@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+@font-face {
+  
+    font-family: SourceSansPro-SemiBold;
+    src: url('../fonts/source-sans-pro/SourceSansPro-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: SourceSansPro-Bold;
+    src: url('../fonts/source-sans-pro/SourceSansPro-Bold.ttf'); 
+  }
+  
+.popup {
+    border-radius: 25px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SourceSansPro-Bold;
+}
+
+.popup body {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #336d9c;
+}
+
+.btn {
+    border-radius: 5px;
+    position: relative;
+    padding: 15px 20px;
+    background: #fff;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    color: #03a9f4;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 25px;
+
+  font-family: SourceSansPro-SemiBold;
+
+  
+  -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 0.5;
+
+}
+
+ 
+
+#modal {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #fff;
+    width: 450px;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible !important;
+    top: 50% !important;
+}
+
+ .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ .content img {
+    max-width: 80px;
+}
+
+ .content h2 {
+    font-weight: bolder;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+ .content p {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+ .content .inputBox {
+    position: relative;
+    width: 100;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .content .inputBox input {
+    width: 320px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    outline: none;
+    font-size: 18px;
+}
+
+ .content .inputBox input[type="submit"] {
+    font-weight: bolder;
+    max-width: 150px;
+    color: #fff;
+    border: none;
+}
+.content .inputBox input[type="submit"]:hover{
+background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 1; 
+}
+.fa-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #333;
+    cursor: pointer;
+}
+.fa-frown-o{
+    font-size: 100px !important;
+    color:  black;
+}
+ 

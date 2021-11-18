@@ -1,0 +1,11 @@
+{
+    "name": "composer/test1",
+    "description": "Gerenciador de pacotes composer",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Composer\\Test1\\": "src/"
+        }
+    },
+    "require": {}
+}
