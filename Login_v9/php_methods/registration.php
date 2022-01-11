@@ -11,7 +11,9 @@ mysqli_real_escape_string($conn, trim(md5($_POST["input1"])));
 
 $sql = "select count(*) as total from usuario where login_usuario = '$user'"; 
 $sql2 = "select count(*) as total from usuario where email_usuario = '$email'"; 
+
 $result = mysqli_query($conn, $sql);
+
 $result2 = mysqli_query($conn, $sql2);
 if( $result ){
 
@@ -29,6 +31,12 @@ else
 $sql = "INSERT INTO usuario (email_usuario, senha_usuario, login_usuario) VALUES ('$email', '$senha', '$user')";
 
 if (mysqli_query($conn, $sql)) {
+$sql = "select id_usuario from usuario where login_usuario = '$user'"; 
+
+$response_query = mysqli_query($conn, $sql);
+$row = mysqli_fetch_row($response_query);
+$id_usuario = $row[0];
+$_SESSION['id_usuario']= $id_usuario;
 header("Location: http://localhost/Projeto-HTML-1-master/TCC/Login_v9/pag_registration2.php");
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
@@ -39,4 +47,10 @@ mysqli_close($conn);
 
 }
 
+
+
 ?>
+
+
+
+

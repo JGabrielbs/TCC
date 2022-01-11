@@ -123,6 +123,8 @@
         </div>
         <a class="fa fa-close" onclick="modalToggle();"></a>
     </div>
+
+    
     
     <?php
 

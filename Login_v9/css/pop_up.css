@@ -12,6 +12,8 @@
   
 .popup {
     border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

@@ -105,14 +105,39 @@ function ValidatePassword(input1, input2, input3, input4) {
     else {
 
         document.getElementById("FormCadastro").submit();
-
+       
     }
 }
+function cadastrar(){
+    document.getElementById("FormCadastro2").submit();
 
+}
 function modalToggle(){
     const modal = document.getElementById('modal');
     modal.classList.toggle('active')
 }
 
+function limitarTextArea(campo){
+    var string = campo.value;
+    var novastring = "";
+    var linhas = new Array();
+    var trocarLinha = false;
+    linhas = string.split("\n");
+    var contador = linhas.length;
 
+    for (x in linhas){
+        if(linhas[x].length > campo.cols-2){
+            linhas[x] = linhas[x].substring(0, campo.cols);
+            trocarLinha=true;
+        }
+        if(x < campo.rows){
+            novastring += linhas[x] + "\n";
+        }
+    }
+
+    if (contador > campo.rows || trocarLinha) {
+        campo.value = novastring.substring(0, novastring.length-1);
+    }
+    return contador <= campo.rows;
+}
 

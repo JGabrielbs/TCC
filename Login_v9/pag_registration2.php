@@ -32,7 +32,6 @@
     <link rel="stylesheet" type="text/css" href="css/style_registration2.css">
     <!--===============================================================================================-->
 
-
 </head>
 
 <body>
@@ -45,7 +44,7 @@
           
          
              
-            <form action="./php_methods/registration.php" method="post" name="FormCadastro" id="FormCadastro" class="login100-form validate-form">
+            <form action="./php_methods/registration2.php" method="post" name="FormCadastro" id="FormCadastro2" class="login100-form validate-form">
                 <span class="login100-form-title p-b-37">
                     Seu Perfil
                 </span>
@@ -61,17 +60,17 @@
 
                 <div class="wrap-input1000">
                 <div class="wrap-input100 validate-input m-b-20" data-validate="Insira seu Nome Pessoal">
-                    <input class="input100" type="text" id="input4" name="name_p" placeholder="Seu nome pessoal">
+                    <input class="input100" type="text" id="input5" name="name_p" placeholder="Seu nome pessoal">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-20" data-validate="Insira sua instituição">
-                    <input class="input100" type="text" id="input3" name="inst_pessoa" name="username" placeholder="Sua instituição de ensino">
+                    <input class="input100" type="text" id="input6" name="inst_pessoa" name="username" placeholder="Sua instituição de ensino">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-25" data-validate="Insira a data de nascimento">
-                    <input class="input100" type="date" id="input1" name=_date_nasc" placeholder="Sua data de nascimento">
+                    <input class="input100" type="date" id="input7" name="date_nasc" placeholder="Sua data de nascimento">
                     <span class="focus-input100"></span>
 
                   
@@ -80,8 +79,7 @@
 
 
                 <div class="wrap-input100 validate-input m-b-25" data-validate="Insira sua descrição">
-                    <input class="input100" type="text" id="descricao100" name="desc"
-                        placeholder="Sua descrição Pessoal">
+            <textarea class= "input100" name="desc" id="input8" cols="300" rows="5" onkeypress="return limitarTextArea(this)" placeholder="Sua descrição"></textarea>
                     <span class="focus-input100"></span>
                  
                   
@@ -90,7 +88,7 @@
 
 
                 <div class="container-login100-form-btn">
-                    <button type="" id="btn1000" class="login100-form-btn">
+                    <button   type="" id="btn1000" class="login100-form-btn">
                     
                   Finalizar
                    <i class="fa fa-long-arrow-alt-right"></i>
@@ -98,6 +96,7 @@
 
 
                 </div>
+
                 </div>
                 <div class="text-center p-t-57 p-b-20">
                     <span class="txt1">

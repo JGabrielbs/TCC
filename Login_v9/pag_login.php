@@ -82,7 +82,10 @@
 		</div>
 	</div>
 
+	<?php
+$sql3 = "select em_ativo from usuario where login_usuario ='$user' AND email_usuario = '$email'";
 
+?>
 
 	<div id="dropDownSelect1"></div>
 

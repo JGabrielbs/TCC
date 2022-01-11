@@ -32,7 +32,7 @@
                 <h1>IFSBook </h1>
                 <h1></h1>
                 <p>Compartilhando histórias, compartilhando experiências.</p>
-                <button>Navegar</button>
+                <button onclick="window.location.href='Detalhes_da_história.html'">Escrever</button>
             </div>
 
 
@@ -42,10 +42,10 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Meu Perfil</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Minhas Obras</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Minhas Obras</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Editar Obra</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Notificações</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Minha Biblioteca</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Minha Biblioteca</a></li>
                     <li class="menu-item"><a href="pag_login.php" class="menu-link">Sair</a></li>
                 </ul>
             </nav>

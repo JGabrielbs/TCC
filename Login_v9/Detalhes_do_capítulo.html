@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <style>
+*{ 
+  
+  margin:0; 
+  padding:0; 
+ box-sizing: border-box;
+ font-family: "Poppins", sans-serif;
+} 
+
+body{
+background:#f6f9ff;
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #434343;
+
+}
+
+.writer-editor{
+ object-position: 0ch;
+  position: center;
+ text-align: center;
+
+}
+
+  </style>
+  
+  
+  
+  <section id="writer-editor-container"><div id="writer-editor"><h2 id="story-title" contenteditable="true">Untitled part</h2>
+    <div class="story-editor medium-editor-element medium-editor-placeholder" role="textbox" aria-label="Write your story" aria-multiline="true" contenteditable="true" spellcheck="true" data-medium-editor-element="true" data-medium-editor-editor-index="1" medium-editor-index="6340b00e-060a-5657-e6b9-31fbdc9cb8c6" data-placeholder="Type your text"><p><br></p><p><br></p></div>
+    <div class="mentioner-container hidden">
+      <span class="title">@</span><input class="input mentioner-input" type="text" placeholder="mencione um usuário">
+    </div>
+    <div class="video-url-container hidden">
+      <input class="input video-input" type="text" placeholder="Colar a URL do YouTube">
+    </div>
+    <div class="story-media-picker" style="left: 234.5px; top: 329px;">
+      <button type="button" class="btn btn-white on-add-image" aria-label="Insert image"><span class="fa fa-image fa-wp-neutral-2 " aria-hidden="true" style="font-size:24px;"></span></button>
+        <div class="popover writer-tooltip fade bottom in hidden" role="tooltip" id="inline-media-tooltip" style="top: 25px; left: -139.5px; display: block;"><div class="arrow"></div><h3 class="popover-title">Adicionar multimídia embutida</h3><div class="popover-content"><div class="main-content">Dê vida à sua história adicionando recursos multimídia.<div class="secondary-content">Deve estar em formato JPG, GIF ou PNG, com menos de 2MB. Dimensões recomendadas para a capa: 512x800 pixels.</div></div><div class="tooltip-footer"><a href="">Saiba mais</a><button class="btn btn-orange on-okay image-tooltip-ok">OK</button></div></div></div>
+      <button type="button" class="btn btn-white on-add-video" aria-label="Insert YouTube video"><span class="fa fa-video fa-wp-neutral-2 " aria-hidden="true" style="font-size:24px;"></span></button>
+    </div>
+    <div class="file-upload hidden">
+      <input accept=".jpeg,image/jpeg, image/png, image/gif" type="file" name="file">
+    </div>
+    <div id="story-image-layout-toggle" class="medium-editor-toolbar medium-toolbar-arrow-under" style="visibility: hidden;">
+      <ul class="medium-editor-toolbar-actions" style="display:block;">
+        <li>
+          <button class="medium-editor-action medium-editor-action-bold medium-editor-button-first">
+            <span class="fa fa-single-image fa-wp-base-2 " aria-hidden="true" style="font-size:16px;"></span>
+          </button>
+        </li>
+        <li>
+          <button class="medium-editor-action medium-editor-action-bold medium-editor-button-last on-add-second-image">
+            <span class="fa fa-single-image fa-wp-neutral-5 " aria-hidden="true" style="font-size:16px;"></span>
+            <span class="fa fa-double-image fa-wp-neutral-5 " aria-hidden="true" style="font-size:16px;"></span>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <span id="image-placeholder" class="hidden"><span class="fa fa-plus fa-wp-neutral-2 " aria-hidden="true" style="font-size:48px;"></span></span>
+    </div><div id="medium-editor-anchor-preview-1" class="medium-editor-anchor-preview"><div class="medium-editor-toolbar-anchor-preview" id="medium-editor-toolbar-anchor-preview">    <a class="medium-editor-toolbar-anchor-preview-inner"></a></div></div><div id="medium-editor-toolbar-1" class="medium-editor-toolbar medium-editor-stalker-toolbar medium-toolbar-arrow-under" style="left: 194.633px; right: initial; top: 267px;"><ul id="medium-editor-toolbar-actions1" class="medium-editor-toolbar-actions" style="display: block;"><li><button class="medium-editor-action medium-editor-action-bold medium-editor-button-first" data-action="bold" title="bold" aria-label="bold"><span class="fa fa-bold fa-wp-base-2 " aria-hidden="true" style="font-size:16px;"></span></button></li><li><button class="medium-editor-action medium-editor-action-italic" data-action="italic" title="italic" aria-label="italic"><span class="fa fa-italic fa-wp-base-2 " aria-hidden="true" style="font-size:16px;"></span></button></li><li><button class="medium-editor-action medium-editor-action-underline" data-action="underline" title="underline" aria-label="underline"><span class="fa fa-underline fa-wp-base-2 " aria-hidden="true" style="font-size:16px;"></span></button></li><li><button class="medium-editor-action medium-editor-action-justifyLeft" data-action="justifyLeft" title="left justify" aria-label="left justify"><span class="fa fa-left-aligned fa-wp-base-2 " aria-hidden="true" style="font-size:16px;"></span></button></li><li><button class="medium-editor-action medium-editor-action-justifyCenter" data-action="justifyCenter" title="center justify" aria-label="center justify"><span class="fa fa-centered fa-wp-base-2 " aria-hidden="true" style="font-size:16px;"></span></button></li><li><button class="medium-editor-action medium-editor-action-justifyRight medium-editor-button-last" data-action="justifyRight" title="right justify" aria-label="right justify"><span class="fa fa-right-aligned fa-wp-base-2 " aria-hidden="true" style="font-size:16px;"></span></button></li></ul></div></section>
+</body>
+</html>
